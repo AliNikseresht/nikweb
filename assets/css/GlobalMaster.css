@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cantora One", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu_one li a {
+  position: relative;
+}
+.menu_one li a:hover::before {
+  background-color: #ffbd39;
+  width: 100%;
+}
+.menu_one li a::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  visibility: visible;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+}
+
+.menu_berger li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.menu_berger li a:hover::before {
+  background-color: #ffbd39;
+  width: 100%;
+}
+.menu_berger li a::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 2px;
+  bottom: 6px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.service {
+  background-color: #343a40;
+  margin: 7px !important;
+  justify-content: space-evenly !important;
+  transition: 0.4s;
+}
+.service h4 {
+  border-bottom: 1px solid #ffbd39;
+  color: white;
+}
+.service:hover {
+  background-color: #ffbd39;
+}
+.service:hover h2 {
+  color: white;
+}
+.service:hover h4 {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.zIndex {
+  z-index: 11111;
+}
+
+.blog_our h5 {
+  color: white;
+}
+.blog_our:hover {
+  color: #ffc107;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    order: -1;
+  }
+}/*# sourceMappingURL=GlobalMaster.css.map */

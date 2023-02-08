@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cantora One', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+.menu_one{
+    li{
+        a{
+            position: relative;
+            &:hover{
+                &::before{
+                    background-color: #ffbd39;
+                    width: 100%;
+                }
+            }
+            &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            visibility: visible;
+            transition: 0.5s;
+            transform: translate(-50%, -50%);
+
+            }
+        }
+    }
+
+}
+
+.menu_berger{
+    li{
+        a{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            &:hover{
+                &::before{
+                    background-color: #ffbd39;
+                    width: 100%;
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 2px;
+                bottom: 6px;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                transition: .5s;
+
+            }
+        }
+    }
+
+}
+
+.service{
+    background-color: #343a40;
+    margin: 7px !important;
+    justify-content: space-evenly!important;
+    transition: .4s;
+    h4{
+        border-bottom: 1px solid #ffbd39;
+        color: white;
+    }
+    &:hover{
+        background-color: #ffbd39;
+        & h2{
+            color: white;
+        }
+        & h4{
+            color: black;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+.zIndex{
+    z-index: 11111;
+}
+
+.blog_our{
+    h5{
+        color: white;
+    }
+    &:hover{
+        color: #ffc107;
+    }
+}
+
+.footer{
+    @media screen and (max-width:768px) {
+        order: -1;
+    }
+}
